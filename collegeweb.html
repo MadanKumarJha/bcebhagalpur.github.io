@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navigation Bar</title>
+        <link rel="shortcut icon" href="logo.gif" type="image/x-icon">
+        <style>
+            #students {
+                border: solid 2px blue;
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            #students td,
+            #students th {
+                border: solid 2px blue;
+                padding: 8px;
+            }
+
+            #students th {
+                background-color: rgb(14, 157, 223);
+            }
+
+            #students tr:hover {
+                background-color: chartreuse;
+                color: red;
+            }
+
+            #students tr {
+                color: darkred;
+            }
+
+            p {
+                text-indent: 300px;
+                color: blueviolet;
+                font-size: 20px;
+                letter-spacing: 1px;
+                background-color: blanchedalmond;
+                line-height: 25px;
+                word-spacing: 5px;
+                text-shadow: 2px 2px 5px rgb(24, 193, 80);
+            }
+
+            #lg {
+                height: 60px;
+                width: 60px;
+            }
+
+            #Text1 {
+                font-size: 60px;
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+
+            }
+
+            #Text2 {
+                font-size: 20px;
+                margin-left: 70px;
+            }
+
+            .dropbtn {
+                background-color: rgb(44, 44, 168);
+                ;
+                color: white;
+                padding: 5px;
+                border-radius: 50px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                margin-left: 20px;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: fixed;
+                background-color: white;
+                min-width: 105px;
+
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            }
+
+            .dropdown-content a {
+                color: black;
+                text-decoration: none;
+                display: block;
+                height: 27px;
+                font-size: 18px;
+                padding-bottom: 6px;
+
+            }
+
+            .dropdown-content a:hover {
+                background-color: rgb(227, 224, 224);
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+                border-radius: none;
+            }
+
+            .dropdown:hover .dropbtn {
+                background-color: white;
+                color: chocolate;
+
+
+            }
+
+            #mk {
+                border: 1px;
+                height: 45px;
+                padding-top: 10px;
+                background-color: rgb(44, 44, 168);
+            }
+
+            .mkj {
+                color: white;
+                margin-left: 30px;
+                padding: 3px;
+                font-size: 18px;
+                text-decoration: none;
+            }
+
+            .mkj:hover {
+                color: chocolate;
+
+                border-radius: 200px;
+                background-color: white;
+            }
+        </style>
+    </head>
+
+    <body style="background-color:bisque;">
+
+        <span id="Text1"> <img id="lg" src="logo.gif">Bhagalpur College Of Engineering</span> <br>
+        <span id="Text2">( Dept. Of Science &amp; Technology, Govt. Of Bihar )</span><br><br>
+        <div id="mk">
+            <a class="mkj" style="margin-left: 90px" href="https://www.bcebhagalpur.ac.in/">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">About us</button>
+                <div class="dropdown-content">
+                    <a href="https://www.bcebhagalpur.ac.in/about-us/history/">History</a>
+                    <a href="https://www.bcebhagalpur.ac.in/about-us/principals-message/">Principal's Message</a>
+                    <a href="https://www.bcebhagalpur.ac.in/about-us/principal-profile/">Principal Profile</a>
+                    <a href="https://www.bcebhagalpur.ac.in/about-us/vision-mission/">Vision & Mission</a>
+                    <a href="https://www.bcebhagalpur.ac.in/about-us/administration/">Administration</a>
+                    <a href="https://www.bcebhagalpur.ac.in/about-us/affiliation/">Affiliation</a>
+                    <a href="https://www.bcebhagalpur.ac.in/about-us/allotment-and-surrender-report/">Allotment and
+                        surrender
+                        report</a>
+                    <a href="https://www.bcebhagalpur.ac.in/about-us/visit-us/">Visit Us</a>
+                    <a href="https://www.bcebhagalpur.ac.in/about-us/contact/">Contact Us</a>
+                    <a href="https://www.bcebhagalpur.ac.in/about-us/why-bhagalpur-college-of-engineering/">Why
+                        Bhagalpur
+                        College Of Engineering</a>
+                    <a href="https://www.bcebhagalpur.ac.in/about-us/alumni-details/">Alumni Details</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Acedemic</button>
+                <div class="dropdown-content">
+                    <a href="#">Admission</a>
+                    <a href="#">Academic Regulation</a>
+                    <a href="#">Academic Calendar</a>
+                    <a href="#">List of holiday</a>
+                    <a href="">Attendence</a>
+                    <a href="">Syllabus</a>
+                    <a href="">Fee Structure</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Department</button>
+                <div class="dropdown-content">
+                    <a href="#">Computer Science and Engineering</a>
+                    <a href="#">Electronics And Communication</a>
+                    <a href="#">Electrical Engineering</a>
+                    <a href="#">Mechanical Engineering</a>
+                    <a href="#">Civil Engineering</a>
+                    <a href="#">Basic Science</a>
+                    <a href="#">Science And Humanities </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Facilities & Services</button>
+                <div class="dropdown-content">
+                    <a href="#">Computer Center</a>
+                    <a href="#">Hostels</a>
+                    <a href="#">Center Library</a>
+                    <a href="">Sport Facilities</a>
+                    <a href="">Gym</a>
+                    <a href="">Bank</a>
+                    <a href="">Club</a>
+                    <a href="">Wi-Fi</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">T&P</button>
+                <div class="dropdown-content">
+                    <a href="#">About Placement</a>
+                    <a href="#">Placement Brochure</a>
+                    <a href="#">Placement List</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Gallery</button>
+                <div class="dropdown-content">
+                    <a href="#">Image Galleries</a>
+                    <a href="#">Video Galleries</a>
+                    <a href="#">Media Galleries</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Approval</button>
+                <div class="dropdown-content">
+                    <a href="#">AICTE</a>
+                </div>
+            </div>
+            <a class="mkj" href="https://www.bcebhagalpur.ac.in/teqip/about-teqip-iii/">Teqip</a>
+            <a class="mkj" href="https://www.bcebhagalpur.ac.in/wp-content/uploads/2019/01/BCE_NIRF_DATA.pdf">Nirf</a>
+            <div class="dropdown">
+                <button class="dropbtn">Login</button>
+                <div class="dropdown-content">
+                    <a href="#">WebMail</a>
+                    <a href="#">Admin Home Page</a>
+                    <a href="#">Faculty Login</a>
+                    <a href="">Student Login</a>
+                </div>
+            </div>
+        </div>
+        <marquee image-spacing:500px; direction="left"><img style="zoom:1.3 ; " src="trng&plac.jpg"
+                alt="trining and placement"><img style="zoom:0.4 ;margin-left: 3000px;" src="nptel.jpeg"
+                alt="trining and placement"></marquee>
+        <p> <b> Bhagalpur College of Engineering(B.C.E), Bhagalpur</b> was set up by the Department Of Science and
+            Technology,
+            Government of
+            Bihar in the year 1960 with a view to providing efficient system of technical education in Bihar.Earlier,
+            the
+            affiliation was under Tilkamanjhi Bhagalpur University (TMBU) Bhagalpur, BIHAR which was later passed on to
+            Aryabhatta
+            Knowledge University (AKU), Patna which was established by the government of Bihar, under Bihar Act 24,
+            2008. BCE is
+            administered by the Department of Science and Technology under the guidance of the government of Bihar.Since
+            the
+            inception of this seat of learning, it has moved ahead with the singular aim of training the students in the
+            field
+            of
+            science and technology, not only the theoretical instructions scattered in hundreds of engineering books but
+            also
+            the
+            pragmatic, down-to-earth practical solutions of the innumerable Engineering problems faced by the working
+            technocrats in
+            various Industries, R&D cells and Govt. departments. About 5000 Alumni, contributing to the cause of science
+            and
+            technology in India and abroad in many important capacities, speak of the glorious tradition of B.C.E the
+            justification
+            that quantity dulls the edge of quality and at least so the B.C.E.The institute offers full-time Bachelor of
+            Technology
+            (B.Tech) degree programs in disciplines of science and technology viz. Computer Science & Engineering,
+            Electronics &
+            Communication Engineering, Electrical Engineering, and Mechanical Engineering, Civil Engineering.
+        </p>
+        <a href="anchor.html" target="_blank">Read more</a>
+        <hr>
+        <marquee behavior="alternate" direction="left"><b><i>welcome to our college</i></b></marquee>
+        <h2>Department</h2>
+        <ol type="1">
+            <li>Electrical engg.</li>
+            <li>Electronics and comm. engg engg.</li>
+            <li>comp. sc. and engg</li>
+            <li>civil engg.</li>
+            <li>Mechanical engg.</li>
+        </ol>
+        <h2>HOD</h2>
+        <ul type="square">
+            <li>raj anwit</li>
+            <li>pushpendra diwedi</li>
+            <li>K N Ram</li>
+            <li>M K Mandal</li>
+        </ul>
+        <h2 style="color: blue; text-align:center;">Topper lists</h2>
+        <table id="students">
+            <tr>
+                <th>Name</th>
+                <th>Roll no</th>
+                <th>Branch</th>
+                <th>Percentage</th>
+                <th>year</th>
+            </tr>
+            <tr>
+                <td>Shruti kumari</td>
+                <td>18534</td>
+                <td>cse</td>
+                <td>89.45%</td>
+                <td>2018-2022</td>
+            </tr>
+            <tr>
+                <td>Prafull kumar</td>
+                <td>18336</td>
+                <td>EE</td>
+                <td>88.73%</td>
+                <td>2018-2022</td>
+            </tr>
+            <tr>
+                <td>Naveen kumar</td>
+                <td>18424</td>
+                <td>ECE</td>
+                <td>87.45%</td>
+                <td>2018-2022</td>
+            </tr>
+            <tr>
+                <td>Ragni</td>
+                <td>18102</td>
+                <td>CE</td>
+                <td>85%</td>
+                <td>2018-2022</td>
+            </tr>
+            <tr>
+                <td>Rimjhim kumari</td>
+                <td>18202</td>
+                <td>Mech. Engg</td>
+                <td>83.83%</td>
+                <td>2018-2022</td>
+            </tr>
+        </table>
+    </body>
+
+</html>
+<h2>Contact Us</h2>
+<a href="Form.html">Click Here</a>
+</body>
+
+</html>
